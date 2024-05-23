@@ -4,10 +4,11 @@
 
 
 
+
 // FUNCTION -----------------------------------------
 
 // funzione per creare una singola riga di una cartella
-function creatorSingleRow(startValue){
+function createSingleRow(startValue){
 
     let singleRow = [];
 
@@ -17,4 +18,19 @@ function creatorSingleRow(startValue){
     }
 
     return singleRow;
+}
+
+// funzione per creare una cartella
+function createSingleGameFolder(counter){
+
+    let gameFolder = [];
+
+    for(let j=0; j<3; j++){
+
+        gameFolder.push(createSingleRow(counter));
+
+        counter += 10;
+    }
+
+    return gameFolder;
 }
